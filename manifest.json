@@ -2,12 +2,13 @@
   "manifest_version": 2,
  
   "name": "Unbreak Autofill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unbreak autofill on sites that block it, like TreasuryDirect",
  
   "content_scripts": [{
     "js": ["content.js"],
-    "matches": ["https://www.treasurydirect.gov/*"]
+    "matches": ["https://www.treasurydirect.gov/*"],
+    "run_at": "document_end"
   }]
  
 }
